@@ -3,6 +3,7 @@ $(function(){
         $('#infoBox').toggleClass('act');
     });
 
+
     $('#name').on('click', function(){
         $('.nameUl').toggleClass('db');
     });
@@ -22,6 +23,11 @@ $(function(){
             $('.ham').toggleClass('ck')
         }
         $('#haminner').toggleClass('act')
+    });
+
+    $('.page-scroll').on('click', function(){
+        $('#haminner').removeClass('act');
+        $('.ham').removeClass('ck');
     });
 
 });

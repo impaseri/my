@@ -13,12 +13,28 @@ body{
     margin: 0;
 }
 
+#shadow{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    display: none;
+}
+
+#shadow.db{
+    display: block;
+}
+
 /* 커서  */
 #cursor {
     width: 30px;
     height: 30px;
     position: fixed;
-    z-index: 999999999999999;
+    z-index: 9999999999;
     left: 0;
     top: 0;
     pointer-events: none;
@@ -124,8 +140,7 @@ body{
     display: block;
     position: absolute;
     top:100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 150px );
 }
 
 /* 메뉴 햄버거 버튼 */
@@ -220,4 +235,26 @@ body{
     left: 0;
     background-color: #f0f0f0;
     opacity: 1
+}
+
+#haminner #inBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#haminner #inBox #inMenu{
+    width: 270px;
+}
+
+#haminner #inBox #inMenu li{
+    text-align: center;
+}
+
+#haminner #inBox #inMenu li a{
+    display: block;
+    line-height: 50px;
 }
