@@ -3,9 +3,20 @@
  * Copyright 2013-2016 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
+
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
+}
+body{
+  font-family: 'LeferiBaseType-RegularA';
 }
 .img-centered {
   margin: 0 auto;
@@ -189,7 +200,6 @@ hr.colored {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-inverse {
-  background-color: #222;
 }
 .navbar-default,
 .navbar-inverse {
@@ -235,7 +245,7 @@ hr.colored {
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -289,7 +299,7 @@ header {
   padding: 100px 0;
 }
 header .intro-content {
-  color: white;
+  color: #000;
   text-align: center;
   position: relative;
 }
@@ -300,6 +310,7 @@ header .brand-name {
   text-transform: uppercase;
   font-weight: 900;
   margin-top: 15px;
+  color: #000;
 }
 header .brand-name-subtext {
   font-size: 20px;
@@ -1024,8 +1035,8 @@ aside.cta-quote span.quote {
   margin: 0;
   font-size: 0.85em;
   line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
+  /* vertical-align: middle;
+  vertical-align: baseline; */
   opacity: 0;
   -webkit-transition: top 0.5s ease,opacity 0.5s ease;
   -moz-transition: top 0.5s ease,opacity 0.5s ease;

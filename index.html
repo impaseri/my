@@ -38,6 +38,7 @@
     <!-- Vitality Theme CSS -->
     <!-- INSTRUCTIONS: Uncomment the color scheme you want to use. Red is chosen by default. -->
     <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
     <!-- <link href="css/vitality-green.css" rel="stylesheet" type="text/css"> -->
@@ -60,19 +61,33 @@
 <!-- NOTE: Use the .modern or .vintage class to the body element below to see different font pairings! -->
 
 <body id="page-top" class="top_page">
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
 
     <!-- Navigation -->
     <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <!-- <nav class="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i> Menu
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/agency/logo.svg" class="img-responsive" alt="">
-                </a>
+                <div id="name">
+                    <ul class="nameUl">
+                        <li>Y</li>
+                        <li>E</li>
+                        <li>S</li>
+                    </ul>
+                    <span>  </span>
+                    <ul class="nameUl">
+                        <li>S</li>
+                        <li>I</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -97,18 +112,33 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Header -->
-    <header style="background-image: url('img/agency/backgrounds/bg-header.jpg');">
-        <div class="intro-content">
-            <img src="img/agency/profile.svg" class="img-responsive img-centered" alt="">
-            <div class="brand-name">Vitality</div>
-            <hr class="colored">
-            <div class="brand-name-subtext">by Start Bootstrap</div>
+    <header style="background-image: url('img/new/main_bg.jpg'); overflow: hidden; ">
+
+        <div id="infoBox">
+            <div id="infoInner">
+                
+            </div>
+            <img class="infobtn" src="img/new/infomation.png" alt="btn">
         </div>
-        <div class="scroll-down">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        <div class="box1400">
+            <div class="intro-content">
+                <!-- <div class="brand-name">PORTFOLIO<br> :MY WORK</div>
+                <div class="brand-name-subtext">by Start Bootstrap</div> -->
+            </div>
+            <div class="scroll-down">
+                <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+            </div>
+            <div class="ham">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+        </div>
+        <div id="haminner">
+            <div></div>
         </div>
     </header>
 
@@ -160,7 +190,7 @@
         <div class="container text-center wow fadeIn">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Our Team</h2>
+                    <h2 class="wow backOutLeft" data-wow-delay="0.2s">Our Team</h2>
                     <p>We are a group of digital marketers with a passion for great art that serves a practical purpose.</p>
                     <hr class="colored">
                 </div>
@@ -1137,6 +1167,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Plugin Scripts -->
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
