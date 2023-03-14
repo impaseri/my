@@ -33,16 +33,17 @@ $(function(){
 });
 
 
-var pointSize = $('#cursor').width() / 2;
-    $('body').mousemove(function(e) {
-    $('#cursor').css("top", e.pageY - pointSize);
-    $('#cursor').css("left", e.pageX - pointSize);
-    $('#cursor').fadeIn();
-}); // Mouse Following
-// Basic
-$(".btn,input,a,textarea").on("mouseover", function() {
-    $('#cursor').addClass('arrow')
-}); // Hover
-$(".btn,input,a,textarea").on("mouseout", function() {
-    $('#cursor').removeClass('arrow')
- }); // Mouseouts
+const docuE = document.documentElement;
+const newCursor = document.getElementById('cursor')
+let posX = 0;
+let posY = 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.onmousemove = function(e) {
+        posX = e.clientX + "px";
+        posY = e.clientY + "px";
+
+        newCursor.style.left = posX;
+        newCursor.style.top = posY;
+    }
+});
