@@ -3,13 +3,14 @@ ul,li{list-style: none;}
 a{text-decoration: none;}
 
 html{
-    height: 100%;
-}
-
-body{
     cursor: none;
     height: 100%;
 }
+
+/* body{
+    cursor: none;
+    height: 100%;
+} */
 .container{
     width: 1400px;
 }
@@ -35,14 +36,17 @@ body{
 }
 
 /* 커서  */
-#cursor{
-    background: transparent;
-    border: solid 1px #de294a;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+#cursor {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    z-index: 100;
+    z-index: 9999999999;
+    background-color: #de294a;
+    border-radius: 50%;
+
+    /* pointer-events: none; */
+    /* will-change: transform; */
+    /*  mix-blend-mode: difference;*/
 }
 
 
