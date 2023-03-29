@@ -18,6 +18,22 @@ body{
     margin: 0;
 }
 
+.dm{
+    font-family: 'DM Serif Display', serif !important;
+    color: #de294a;
+    font-size: 130px;
+    text-align: left;
+}
+
+.preten{
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-size: 130px;
+    color: #000;
+    letter-spacing: -.8px;
+    position: absolute;
+}
+
 #shadow{
     width: 100%;
     height: 100%;
@@ -407,3 +423,151 @@ body{
     display: block;
     line-height: 50px;
 }
+
+
+/* 0329 시작 */
+
+#about h1, #about h2, #about h3,#about h4,#about h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#about, #work{
+    position: relative;
+    font-family: 'Pretendard';
+}
+
+.aboutbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.aboutbox .hTitle{
+    height: 300px;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    color: #fff;
+    width: 50%;
+}
+
+.aboutbox .hTitle h2{
+    font-size: 6em;
+}
+
+.aboutbox .hTitle h6{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.aboutbox .area{
+    position: static;
+    z-index: 1;
+    width: 50%;
+}
+
+.aboutbox .area .renew{
+}
+
+.aboutbox .area .renew >li{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+    position: relative;
+}
+
+.renew >li:hover .mockup{
+    transform: translateX(-20px);
+}
+
+.renew .mockup{
+    width: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+    transition: 0.5s ease-in;
+}
+
+.renew .mockup img{
+    display: block;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #de294a;
+    border-radius: 40px;
+}
+
+
+#work{}
+
+#work .hTitle{
+    padding: 0 50px;
+}
+
+#work h2{
+    width: 40%;
+    text-transform: none;
+    font-size: 6em;
+    color: #de294a;
+}
+
+.port{
+    padding: 50px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.port >li{
+    width: 32%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.port li a{
+    display: block;
+}
+
+.port li:hover .blackText{
+    width: 100%;
+}
+
+.blackText{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* .rebtn{
+    width: 50px;
+    height: 300px;
+    background-color: #de294a;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
