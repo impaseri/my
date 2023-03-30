@@ -30,6 +30,16 @@ $(function(){
         $('.ham').removeClass('ck');
     });
 
+    setInterval(function(){
+        slideani();
+    }, 2000)
+    function slideani(){
+        $('.slideT').animate({'marginTop': '-=' +50}, 500, function(){
+            $('li:first-child', this).appendTo($(this));
+            $('.slideT').css({'marginTop': 0});
+        })
+    }
+    
 });
 
 

@@ -1,0 +1,29 @@
+@media (max-width: 1281px){
+    #my >div .flex{
+        justify-content: space-between;
+    }
+
+    #my .circle{
+        width: 44%;
+    }
+
+    #my .circle .cir{
+        width: 140px;
+        height: 140px;
+        margin: 0 2px;
+    }
+
+    #my .text{
+        width: 58%;
+        padding: 0;
+    }
+
+    #my .text .flexonly{
+        justify-content: flex-end;
+    }
+
+    #my .flexonly p, #my .slideT li{
+        font-size: 2.8rem;
+    }
+}
+
