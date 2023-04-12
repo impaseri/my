@@ -1,8 +1,11 @@
 @media (max-width: 1281px){
     .new .container-fluid{
-        width: 1280px;
+        width: 100%;
         margin: 0 auto;
         padding: 30px;
+    }
+    .navbox{
+        width: 1280px;
     }
     
 

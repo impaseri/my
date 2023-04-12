@@ -7,6 +7,7 @@ html{
     height: 100%;
 }
 
+
 body{
     height: 100%;
     font-size: 16px;
@@ -15,6 +16,11 @@ body{
     width: 1440px;
     margin: 0 auto;
     padding: 0;
+}
+
+.navbox{
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -78,36 +84,6 @@ body{
 }
 
 
-/* 로고 */
-#name{
-    font-family: 'LeferiBaseType-RegularA';
-    display: flex;
-    align-items: center;
-}
-#name .nameUl{
-    display: flex;
-    transition: all 0.6s ease;
-    width: 33px;
-    padding-top: 15px;
-}
-#name .nameUl > li{
-    color: #000;
-}
-
-#name .nameUl.db{
-    flex-direction: row-reverse;
-    width: 22px;
-}
-
-#name .nameUl.db >li:nth-child(1){
-    display: none;
-}
-
-#name span{
-    text-align: center;
-    color: #000;
-}
-
 /* 콘테이너 크기 */
 
 .width100{
@@ -140,176 +116,11 @@ body{
     overflow: hidden;
 }
 
-.formCheck{
-    display: flex;
-    width: 300px;
-    margin: 0 auto;
-}
-
-.formCheck >li{
-    width: 50%;
-}
-
-.formCheck input{
-    display: none;
-}
-
-.formCheck input:checked + label{
-    background-color: #de294a;
-    color: #fff;
-}
-.formCheck input:checked ~ ul{
-    z-index: 5;
-}
-
-.formCheck label{
-    display: block;
-    background-color: #fff;
-    border: solid 1px #de294a;
-    color: #de294a;
-    text-align: center;
-    line-height: 40px;
-    transition: 0.3s;
-}
-.formCheck .img{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background-color: #de294a;
-}
-
-.formCheck .img .profile{
-    position: absolute;
-    top: -10px;
-    left: 0;
-}
-
-.formCheck .img .profile img{
-    width: 300px;
-    max-width: 300px;
-    max-height: 360px;
-}
-
-.formCheck .form-check .skill{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    top: 130px;
-    left: calc(50% - 300px);
-    background-color: #fff;
-
-}
-
-.skill .coding{
-    width: 300px;
-}
-
-.formCheck .experience,
-.formCheck .program{
-    width: 390px;
-    height: 400px;
-}
-
-.formCheck .program >div{
-    margin-left: 30px;
-}
-
-.programing{
-    width: 100%;
-    height: 250px;
-}
-
-
-
-.formCheck .experience .exper{
-    margin-left: 30px;
-}
-
 
 /* skills */
 
 
 /* work */
-
-
-.work small{
-    display: block;
-    opacity: 0.7;
-}
-.work ul li{
-    position: relative;
-    margin-left: 15px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-}
-.work ul li:hover::before{
-    animation: circle 1.2s infinite;
-}
-.work ul li:hover span {
-    color:  #de294a;
-}
-@keyframes circle {
-    from {
-    box-shadow: 0 0 0 0px  #de294a;
-    }
-    to {
-    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
-    }
-}
-.work ul li:first-of-type::before {
-    width: 10px;
-    height: 10px;
-    left: 1px;
-    top: -1px;
-}
-.work ul li:last-of-type{
-    padding-bottom: 3px;
-}
-.work ul li:last-of-type::after {
-    border-radius: 1.5px;
-}
-.work ul li::before,
-.work ul li::after{
-    content: "";
-    display: block;
-    position: absolute;
-}
-.work ul li::before {
-    width: 7px;
-    height: 7px;
-    background: #de294a;
-    border-radius: 50%;
-    left: 3px;
-    z-index: 1;
-}
-.work ul li::after {
-    width: 3px;
-    height: 100%;
-    background: #de294a;
-    left: 5px;
-    top: 0;
-}
-
-.work ul li .direct{
-    margin-top: 5px;
-    display: block;
-    background-color: #de294a;
-    color: #fff;
-    width: 100px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 1rem;
-}
-.work ul li span {
-    transition-duration: 0.3s;
-}
-.work {
-    padding: 0 15px;
-}
-
-.work >ul{
-    margin-top: 10px;
-}
 
 
 
@@ -632,7 +443,27 @@ section{
     height: 180px;
     border-radius: 50%;
     border: solid 1px #de294a;
+    overflow: hidden;
+    position: relative;
+    transition: 0.6s;
 }
+
+.circle .cir:hover span{
+    color: #fff;
+}
+
+.circle .cir:first-child span{
+    line-height: 180px;
+}
+
+.cir span{
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    line-height: 160px;
+    transition: 0.6s;
+}
+
 
 .circle  .plus{
     font-size: 3rem;
@@ -855,6 +686,36 @@ section{
 
 
 /* 메인타이틀 */
+
+.main{
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background-color: #de294a;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    width: 20%;
+}
+
+nav ul li a{
+    display: block;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
 
 #maintitle{
     width: 700px;
