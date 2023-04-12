@@ -38,4 +38,8 @@
     .aboutbox .area .renew >li{
         width: 100%;
     }
+
+    .phototab{
+        height: 642px;
+        }
 }

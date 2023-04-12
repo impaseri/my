@@ -9,7 +9,7 @@ html{
 
 body{
     height: 100%;
-    font-size: 12px;
+    font-size: 16px;
 }
 .new .container-fluid{
     width: 1440px;
@@ -733,7 +733,7 @@ section{
 .pobox .poheader{
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
     height: 70px;
 }
 
@@ -770,13 +770,87 @@ section{
 
 .pobox .poinner{
     width: 91%;
-    background: aqua;
+    overflow: hidden;
     position: absolute;
     height: 64%;
     top: 130px;
+    padding: 30px;
+    box-sizing: border-box;
     border-radius: 20px;
+    border: solid 1px #ccc;
 }
 
+.pobox .poinner img{
+    display: none;
+}
+
+.pobox .poinner.act{
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0,0,0,0.33); 
+    box-shadow: 2px 5px 20px -5px rgba(0,0,0,0.33);
+}
+
+.pobox .poinner.act img{
+    display: block;
+    width: 100%;
+}
+
+.pbtn{
+    width: 70%;
+    text-align: right;
+}
+
+.pbtn p{
+    cursor: pointer;
+}
+
+.pbtn span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    padding: 3px;
+    background-color: #de294a;
+    border-radius: 50%;
+}
+.poinner .dst h4{
+    padding-bottom: 10px;
+}
+.poinner .dst p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.poinner .dstlink{
+    width: 100%;
+    padding: 28px 0;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 20px;
+}
+
+.poinner .dstlink::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.poinner .dstlink li{
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+.poinner .dstlink a{
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: #000;
+    color: #fff;
+}
+
+.poinner .dstlink a:hover{
+    background-color: #de294a;
+    transform: translateY(-5px);
+}
 /* 스킬바 0331 */
 
 

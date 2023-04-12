@@ -30,6 +30,10 @@ $(function(){
         $('.ham').removeClass('ck');
     });
 
+    $('.pbtn p').on('click', function(){
+        $('.poinner').toggleClass('act')
+    })
+
     setInterval(function(){
         slideani();
     }, 2000)
