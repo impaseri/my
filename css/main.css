@@ -12,7 +12,8 @@ body{
     font-size: 12px;
 }
 .new .container-fluid{
-    margin: 0;
+    width: 1440px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -23,8 +24,18 @@ body{
 .dm{
     font-family: 'DM Serif Display', serif !important;
     color: #de294a;
-    font-size: 130px;
     text-align: left;
+    font-weight: 500;
+}
+
+#maintitle .gara{
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 400;
+    font-size: 120px;
+}
+
+.pf{
+    font-family: 'PFStardust';
 }
 
 .preten{
@@ -98,11 +109,6 @@ body{
 }
 
 /* 콘테이너 크기 */
-.box1400{
-    /* width: 1400px; */
-    height: 100vh;
-    margin: 0 auto;
-}
 
 .width100{
     width: 100%;
@@ -128,10 +134,9 @@ body{
 #infoBox #infoInner{
     width: 1000px;
     height: 90%;
-    top: 8%;
-    position: absolute;
-    left: 50%;
-    margin-left: -500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
     overflow: hidden;
 }
 
@@ -139,7 +144,6 @@ body{
     display: flex;
     width: 300px;
     margin: 0 auto;
-    position: relative;
 }
 
 .formCheck >li{
@@ -189,9 +193,15 @@ body{
 .formCheck .form-check .skill{
     display: flex;
     position: absolute;
-    top: 180%;
-    left: -150px;
+    width: 100%;
+    top: 130px;
+    left: calc(50% - 300px);
     background-color: #fff;
+
+}
+
+.skill .coding{
+    width: 300px;
 }
 
 .formCheck .experience,
@@ -434,13 +444,9 @@ body{
     margin-bottom: 0;
 }
 
-#about, #work, #my, #my2{
+section{
     position: relative;
     font-family: 'Pretendard';
-}
-
-#about{
-    padding: 50px;
 }
 
 .aboutbox{
@@ -473,7 +479,10 @@ body{
     width: 50%;
 }
 
-.aboutbox .area .renew{
+.aboutbox .area .renew::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .aboutbox .area .renew >li{
@@ -481,9 +490,10 @@ body{
     background-color: #fff;
     border-radius: 30px;
     padding: 30px;
-    margin-bottom: 30px;
-    height: 400px;
+    margin-bottom: 50px;
     position: relative;
+    height: 450px;
+    float: right;
 }
 
 .renew >li:hover .mockup{
@@ -508,6 +518,8 @@ body{
     justify-content: space-between;
 }
 
+.lkbt{}
+
 
 .background{
     position: absolute;
@@ -523,27 +535,33 @@ body{
 #work{}
 
 #work .hTitle{
-    padding: 0 50px;
+    padding: 50px 0;
 }
 
-#work h2, #my h2{
+#work h2, #my h2, #design h2, #portfolio h2{
     width: 40%;
     text-transform: none;
     font-size: 6em;
     color: #de294a;
 }
 
+#work img{
+    display: block;
+    height: 100%;
+}
+
 .port{
-    padding: 50px;
+    padding: 50px 0;
     position: relative;
     /* overflow: hidden; */
 }
 
 .port >li{
     width: 32%;
+    max-width: 568px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 30px;
-    height: 300px;
+    /* height: 300px; */
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -578,7 +596,6 @@ body{
 } */
 
 #my{
-    padding: 0 50px;
     margin-top: 100px;
 }
 
@@ -624,8 +641,8 @@ body{
 }
 
 .text{
-    width: 50%;
-    padding-left: 80px;
+    width: 55%;
+    padding-left: 50px;
 }
 
 .text .flexonly{
@@ -706,4 +723,248 @@ body{
     100% {
         transform: translateX(130px);
     }
+}
+
+
+
+/* 0331 */
+.pobox{}
+
+.pobox .poheader{
+    display: flex;
+    justify-content: space-between;
+
+    height: 70px;
+}
+
+.pobox .poheader .num1{
+}
+
+.pobox .poheader .num1 p{
+    font-weight: 800;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #de294a;
+    border-radius: 50%;
+    width: 59px;
+    height: 59px;
+    line-height: 59px;
+}
+
+.pobox .poheader .ptitle{
+    padding: 0 15px;
+}
+
+.pobox .poheader .ptitle p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #de294a;
+    margin: 0;
+}
+
+.pobox .poheader .ptitle h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.pobox .poinner{
+    width: 91%;
+    background: aqua;
+    position: absolute;
+    height: 64%;
+    top: 130px;
+    border-radius: 20px;
+}
+
+/* 스킬바 0331 */
+
+
+/* 메인타이틀 */
+
+#maintitle{
+    width: 700px;
+    margin: 0 auto;
+    padding: 220px 0 130px 0;
+}
+
+#maintitle h2{
+    text-align: center;
+    font-size: 110px;
+    color: #de294a;
+    font-weight: 900;
+    line-height: 130px;
+}
+
+#maintitle h2:nth-child(2){
+    position: relative;
+}
+
+
+#maintitle h2:nth-child(2) a{
+    animation: view 1s infinite alternate ease-in-out ;
+    color: #de294a;
+    position: relative;
+}
+#maintitle h2:nth-child(2) a:hover{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #de294a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 50px;
+    
+}
+
+#maintitle h2:nth-child(2) a:hover + span{
+    display: block;
+}
+#maintitle h2:nth-child(2) span{
+    font-size: 14px;
+    position: absolute;
+    top: -30px;
+    left: 68%;
+    display: none;
+}
+
+
+
+
+#maintitle span{
+    font-weight: 700;
+}
+
+#maintitle img{
+    display: inline-block;
+    width: 106px;
+    margin: 0 30px;
+    animation: like 3s infinite alternate ease-in-out;
+}
+
+@keyframes like {
+    0%{transform:rotate(0)}
+    100%{transform:rotate(-20deg)}
+}
+
+@keyframes view{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+.gara::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+    color: #de294a;
+    font-size: 110px;
+    line-height: 120px;
+    margin-left: 8px;
+}
+
+@keyframes blink {
+0% {
+    opacity:1;
+}
+49% {
+    opacity:1;
+}
+50% {
+    opacity:0;
+}
+100% {
+    opacity:0;
+}
+}
+
+
+/* 사진포폴 */
+.photo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.photo ul{
+
+}
+.photo li{
+
+}
+
+
+.photo input{
+    display: none;
+}
+
+.photo input:checked + label{
+    background-color: #fff;
+}
+
+.photo input:checked ~ div{
+    z-index: 5;
+    opacity: 1;
+}
+
+.photo label{
+    display: block;
+    width: 100%;
+
+    margin-bottom: 15px;
+    background-color: #de294a;
+    transition: 0.6s ease;
+}
+
+.photo li:last-child label{
+    margin: 0;
+}
+
+.photo label img{
+    display: block;
+    width: 100%;
+    opacity: 0.2;
+}
+
+
+.phototab{
+    width: 20%;
+    height: 760px;
+    overflow: auto;
+}
+
+.phototab::-webkit-scrollbar {
+    display: none;
+}
+
+
+.onlyphoto{
+    position: absolute;
+    width: 79%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.6s ease;
+    opacity: 0;
+
+}
+
+.onlyphoto li{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.onlyphoto img{
+    display: block;
+    width: 100%;
+    transition: 0.6s ease;
+
 }
