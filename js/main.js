@@ -30,7 +30,7 @@ $(function(){
         $('.ham').removeClass('ck');
     });
 
-    $('.pbtn p').on('click', function(){
+    $('.pbtn p', this).on('click', function(){
         $('.poinner').toggleClass('act')
     })
 
@@ -54,6 +54,33 @@ $(function(){
             $('.pobox').height(boxWidth2*0.7);
         }
     });
+
+    $('#tab2').on('click', function(){
+        var htm = function(){
+            document.querySelector(".htm").className = "htm1";
+        };
+        var css = function(){
+            document.querySelector(".css").className = "css1";
+        };
+        var jav = function(){
+            document.querySelector(".javascript").className = "javascript1";	
+        };
+        var jqu = function(){
+            document.querySelector(".jquery").className = "jquery1";	
+        };
+        var sql = function(){
+            document.querySelector(".sql").className = "sql1";	
+        };
+        var rea = function(){
+            document.querySelector(".react").className = "react1";	
+        };
+        setTimeout(htm,500);
+        setTimeout(css,500);
+        setTimeout(jav,500);
+        setTimeout(jqu,500);
+        setTimeout(sql,500);
+        setTimeout(rea,500);
+    })
 
 });
 
