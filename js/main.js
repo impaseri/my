@@ -9,12 +9,18 @@ $(function(){
     });
 
     $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
+        if($(this).scrollTop() > 100 || $('#haminner').hasClass('act')){
             $('.ham').addClass('act');
-        }else{
+        }
+        else{
             $('.ham').removeClass('act');
         }
+
     });
+
+    if($('#haminner').hasClass('act')){
+        $('.ham').addClass('act');
+    }
 
     $('.ham').on('click', function(){
         if(
@@ -31,7 +37,7 @@ $(function(){
     });
 
     $('.pbtn p').on('click', function(){
-        $('.poinner').toggleClass('act');
+        $(this).next().toggleClass('act');
     });
 
     setInterval(function(){

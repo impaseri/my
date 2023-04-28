@@ -5,6 +5,7 @@ a{text-decoration: none;}
 html{
     cursor: none;
     height: 100%;
+    scroll-behavior:smooth;
 }
 
 
@@ -443,6 +444,22 @@ margin-top: 22px;
 }
 
 /* 메뉴 햄버거 버튼 */
+
+.topbtn{
+    z-index: 99;
+    position: fixed;
+    right: -80px;
+    /* opacity: 0; */
+    bottom: 100px;
+    width: 80px;
+    height: 30px;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: translateY(25px);
+    color: #de294a;
+}
+
+
 .ham{
     z-index: 99;
     position: fixed;
@@ -538,24 +555,81 @@ margin-top: 22px;
 
 #haminner #inBox{
     position: relative;
-    width: 100%;
+    width: 900px;
+    margin: 0 auto;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-#haminner #inBox #inMenu{
-    width: 270px;
+#haminner #inBox .inleft{
+    width: 510px;
 }
 
-#haminner #inBox #inMenu li{
-    text-align: center;
+#haminner #inBox .inleft li{
 }
 
-#haminner #inBox #inMenu li a{
+#haminner #inBox .inleft li a{
     display: block;
-    line-height: 50px;
+    line-height: 120px;
+    font-size: 70px;
+    font-weight: 800;
+    color: #de294a;
+    font-family: 'Pretendard';
+    position: relative;
+}
+
+
+#haminner #inBox .inleft li a span{
+    position: absolute;
+    display: inline-block;
+
+    height: 40px;
+    border-radius: 50px;
+    background-color: hsla(0, 0%, 95%, 0.7);
+    border: 1px solid hsla(0,0%,95%,.7);
+    box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,.1);
+    text-align: center;
+    top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #de294a;
+}
+.inleft_1{
+    width: 40px;
+    right:200px;
+}
+.inleft_2{
+    width: 40px;
+    right: 215px;
+}
+.inleft_3{
+    width: 70px;
+    right: 175px;
+}
+
+
+#haminner #inBox .inleft li:hover a{
+    color: transparent;
+}
+
+#haminner #inBox .inright{
+    width: 300px;
+}
+
+#haminner #inBox .inright li{
+    height: 200px;
+    padding: 25px 0;
+}
+
+#haminner #inBox .inright li a{
+    display: block;
+    background-color: #de294a;
+    line-height: 40px;
+    border-radius: 70px 70px 0 70px;
+    text-align: center;
+    color: #fff;
 }
 
 
@@ -655,7 +729,7 @@ margin-top: 22px;
     padding: 50px 0;
 }
 
-#work h2, #my h2, #design h2, #portfolio h2{
+#work h2, #my h2, #design h2, #portfolio h2, #react h2{
     width: 40%;
     text-transform: none;
     font-size: 6em;
@@ -895,10 +969,12 @@ margin-top: 22px;
     position: absolute;
     height: 64%;
     top: 130px;
+    left: calc(50% - 295px);
     padding: 30px;
     box-sizing: border-box;
     border-radius: 20px;
     border: solid 1px #ccc;
+    text-align: left;
 }
 
 .pobox .poinner img{
