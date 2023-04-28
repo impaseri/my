@@ -9,11 +9,20 @@ $(function(){
     });
 
     $(window).scroll(function(){
+        const windowScrollTop = $(window).scrollTop();
+        // height : 백분율을 구할 높이 (위 예시에서 2000-500을 하는 과정)
+        const height = $(document).height() - $(window).height();
+        // procent : 현재 위치의 스크롤 백분율
+        const procent = Math.floor(windowScrollTop / height * 100)
+        $(".procent").text(procent + "%");
+
         if($(this).scrollTop() > 100 || $('#haminner').hasClass('act')){
             $('.ham').addClass('act');
+            $('.ham2').addClass('act');
         }
         else{
             $('.ham').removeClass('act');
+            $('.ham2').removeClass('act');
         }
 
     });
