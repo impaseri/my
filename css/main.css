@@ -173,7 +173,8 @@ body{
 }
 .resume .me{
     position: relative;
-    background-color: #ccc;
+background-image: url(../img/new/profile.png);
+background-repeat: no-repeat;
 }
 
 .resume .me .contact{
@@ -858,6 +859,11 @@ margin-top: 22px;
     color: #de294a;
 }
 
+#portfolio h4{
+    font-weight: 400;
+    color: #d2d2d2;
+}
+
 #work img{
     display: block;
     height: 100%;
@@ -1126,7 +1132,7 @@ margin-top: 22px;
     font-weight: 700;
 }
 
-.pobox:nth-child(4) .ptitle{
+.pobox:nth-child(3) .ptitle{
     width: 115px;
 }
 
