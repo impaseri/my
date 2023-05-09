@@ -92,11 +92,14 @@ $(function(){
         setTimeout(htm,500);
         setTimeout(css,500);
         setTimeout(jav,500);
-        setTimeout(jqu,500);
+        setTimeout(jqu,500); 
         setTimeout(sql,500);
         setTimeout(rea,500);
     })
-
+    $('.my').on('click', function(){
+        $('.contact').toggleClass('act');
+        $(this).toggleClass('act');
+    })
 });
 
 

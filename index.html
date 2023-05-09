@@ -47,6 +47,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/izz4tqq.css">
+    <link rel="icon" type="image/png" href="./img/new/up.png" />
+
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -73,8 +75,13 @@
                         <label for="tab1">Resume</label>
                         <div class="resume">
                             <div class="me">
-                                <button><span class="xi-plus"></span></button>
+                                <button class="my">
+                                </button>
                                 <div class="contact">
+                                    <h4>박세리</h4>
+                                    <p>1997.12.24 (만 25세)</p>
+                                    <p>010-4615-7524</p>
+                                    <p>pseri1224@gmail.com</p>
                                 </div>
                             </div>
                             <ul>
@@ -209,20 +216,24 @@
                 </ul>
                 <ul class="inright">
                     <li>
-                        <a href="#">Notion <span class="xi-arrow-right"></span></a>
+                        <div>Notion</div>
+                        <ul class="qr">
+                            <li><a href="#"><img src="./img/new/link.png" alt="노션 링크"></a></li>
+                            <li><a href="#"><img src="./img/new/notion_qr.png" alt="노션qr"></a></li>
+                        </ul>
                     </li>
                     <li class="line">
-                        <a href="#">Download <span class="xi-arrow-down"></span></a>
-                    </li>
-                    <li class="line">
-                        <a href="#">Contact</a>
+                        <div>Download</div>
+                        <ul class="qr">
+                            <li><a href="#"><img src="./img/new/down.png" alt="노션 링크"></a></li>
+                            <li><a href="#"><img src="./img/new/notion_qr.png" alt="노션qr"></a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    
     <section id="my">
         <div class="container-fluid">
             <div class="hTitle">
@@ -267,20 +278,51 @@
             <div class="wbox">
                 <ul class="port flex">
                     <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeInLeft"  data-wow-duration=".7s" data-wow-delay=".3s">
-                        <a href="#"><img src="./img/new/genie.png" alt=""></a>
+                        <img src="./img/new/renew_1.png" alt="보스 리뉴얼">
                         <div class="blackText">
-                            <div class="hTitle">
-                                <h5>GENIE</h5>
+                            <div>
+                                <h5>BOSE</h5>
+                                <p>음향 기기 판매 업체 BOSE의 쇼핑몰 사이트입니다.</p>
+                                <p>Bootstrap을 기반으로 리뉴얼 작업했으며,</p>
+                                <p>Full page, slide swiper 등의 플러그인을 사용해</p>
+                                <p>시원한 디자인의 메인 페이지를 구성했습니다.</p>
+                                <div class="renewLink">
+                                    <a href="#">After <span class="xi-long-arrow-right"></span></a>
+                                    <a href="#">Before <span class="xi-long-arrow-right"></span></a>
+                                </div>
                             </div>
                         </div>
-                        <!-- <ul class="rebtn">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul> -->
                     </li>
-                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeIn" data-wow-duration=".8s" data-wow-delay=".3s"></li>
-                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeInRight" data-wow-duration=".7s" data-wow-delay=".3s"></li>
+                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
+                        <img src="./img/new/renew_2.png" alt="롤스터 리뉴얼">
+                        <div class="blackText">
+                            <div>
+                                <h5>KT ROLSTER</h5>
+                                <p>E-sport 팀 KT Rolster 소개 사이트입니다.</p>
+                                <p>Bootstrap을 기반으로 리뉴얼 작업했으며,</p>
+                                <p>케이티 롤스터의 키 컬러를 바탕으로 새롭게 디자인했습니다.</p>
+                                <div class="renewLink">
+                                    <a href="#">After <span class="xi-long-arrow-right"></span></a>
+                                    <a href="#">Before <span class="xi-long-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeInRight" data-wow-duration=".7s" data-wow-delay=".3s">
+                        <img src="./img/new/renew_3.png" alt="지니 리뉴얼">
+                        <div class="blackText">
+                            <div>
+                                <h5>GENIE</h5>
+                                <p>음원 사이트 GENIE의 메인 페이지입니다.</p>
+                                <p>Bootstrap을 기반으로 리뉴얼 작업했으며,</p>
+                                <p>기존 페이지의 콘셉트를 지키며 심미성을 높이고자 했습니다.</p>
+                                <div class="renewLink">
+                                    <a href="#">After <span class="xi-long-arrow-right"></span></a>
+                                    <a href="#">Before <span class="xi-long-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -398,23 +440,81 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="flex pobox">
+                        <ul class="poheader">
+                            <li class="num1">
+                                <p>4</p>
+                            </li>
+                            <li class="ptitle">
+                                <p>React</p>
+                                <h3>ACE</h3>
+                            </li>
+                            <li class="pbtn">
+                                <p class="p1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                                <div class="poinner act">
+                                    <img src="./img/new/ace.png" alt="몹">
+                                    <div>
+                                        <h4>Link:</h4>
+                                        <ul class="dstlink">
+                                            <li><a href="http://mobing.dothome.co.kr/#" target="_blank">Homepage</a></li>
+                                            <li><a href="#">Figma</a></li>
+                                            <li><a href="#">Download</a></li>
+                                            <li><a href="#">Storyborad</a></li>
+                                        </ul>
+                                        <div class="dst">
+                                            <h4>Description:</h4>
+                                            <p>HTML, CSS, SCSS, SQL, PHP(레퍼런스 참조), Jquery, Javascript 등</p>
+                                            <p>메인페이지, 서브페이지(로그인, 회원가입) 구현</p>
+                                            <p>Myadmin page MySQL 데이터베이스 연동(회원가입 및 로그인 페이지), Swiper slide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex pobox">
+                        <ul class="poheader">
+                            <li class="num1">
+                                <p>5</p>
+                            </li>
+                            <li class="ptitle">
+                                <p>React 기초</p>
+                                <h3>TODO</h3>
+                            </li>
+                            <li class="pbtn">
+                                <p>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                                <div class="poinner act">
+                                    <img src="./img/new/todo3.png" alt="리액트 투두">
+                                    <div>
+                                        <h4>Link:</h4>
+                                        <ul class="dstlink">
+                                            <li><a href="https://parkseri.cafe24.com/" target="_blank">Git Page</a></li>
+                                        </ul>
+                                        <div class="dst">
+                                            <h4>Description:</h4>
+                                            <p>React, css  등</p>
+                                            <p>Add, Delete 기능 구현, 모달 및 좋아요 기능 구현</p>
+                                            <p>Myadmin page MySQL 데이터베이스 연동(회원가입 및 로그인 페이지), Swiper slide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="background"></div>
     </section>
-<!-- 
-    <section id="react">
-        <div class="container-fluid">
-            <div class="hTitle">
-                <h6>02 - 03</h6>
-                <h2>React.</h2>
-            </div>
-            <div></div>
-        </div>
-    </section> -->
 
-    <!-- Portfolio Grid Section -->
     <section id="design">
         <div class="container-fluid">
             <div class="hTitle">
@@ -647,30 +747,12 @@
                 </div>
                 <div class="col-md-4 contact-details">
                     <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <p>경기도 의왕시 삼동 부곡초등3길 5-0</p>
                 </div>
                 <div class="col-md-4 contact-details">
                     <h4><i class="fa fa-envelope"></i> Email</h4>
                     <p><a href="mailto:mail@example.com">pseri1224@gmail.com</a>
                     </p>
-                </div>
-            </div>
-            <div class="row social">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row copyright">
-                <div class="col-lg-12">
-                    <p class="small">&copy; 2016 Start Bootstrap Themes</p>
                 </div>
             </div>
         </div>
