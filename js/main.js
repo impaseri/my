@@ -100,6 +100,16 @@ $(function(){
         $('.contact').toggleClass('act');
         $(this).toggleClass('act');
     })
+
+    $('#more').on('click', function(){
+        $('#portfoliolist').removeClass('lock');
+        $('#portfoliolist').addClass('new');
+    })
+
+    $('#less').on('click', function(){
+        $('#portfoliolist').addClass('lock');
+        $('#portfoliolist').removeClass('new');
+    })
 });
 
 

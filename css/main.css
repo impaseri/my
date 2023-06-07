@@ -1438,3 +1438,36 @@ nav ul li a{
 
 }
 
+#portfoliolist.lock{
+    height: 1980px;
+    overflow: hidden;
+}
+
+#portfoliolist.new{
+    height: 4528px;
+}
+
+#portfoliolist.lock + p,
+#portfoliolist.new + p{
+    position: relative;
+    border: solid 1px #de294a;
+    margin-top: 30px;
+}
+
+#portfoliolist.lock + p #more,
+#portfoliolist.new + p #less{
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    top: -20px;
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #de294a;
+    color: #fff;
+}
+
+#portfoliolist.new + p #more,
+#portfoliolist.lock + p #less{
+    display: none;
+}
