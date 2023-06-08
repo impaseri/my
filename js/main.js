@@ -110,6 +110,11 @@ $(function(){
         $('#portfoliolist').addClass('lock');
         $('#portfoliolist').removeClass('new');
     })
+
+    $('.poster, .thum, .web').on('click', function(){
+        $('#portfoliolist').removeClass('lock');
+        $('#portfoliolist').removeClass('new');
+    })
 });
 
 

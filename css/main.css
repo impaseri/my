@@ -1438,6 +1438,10 @@ nav ul li a{
 
 }
 
+#portfoliolist{
+    transition: 0.3s ease;
+}
+
 #portfoliolist.lock{
     height: 1980px;
     overflow: hidden;
@@ -1454,8 +1458,14 @@ nav ul li a{
     margin-top: 30px;
 }
 
+#portfoliolist + p #more,
+#portfoliolist + p #less{
+    display: none;
+}
+
 #portfoliolist.lock + p #more,
 #portfoliolist.new + p #less{
+    display: block;
     position: absolute;
     right: -1px;
     top: 50%;
