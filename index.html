@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"> <!--애니메이터 세트-->
     <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css">
 
     <!-- Vitality Theme CSS -->
     <!-- INSTRUCTIONS: Uncomment the color scheme you want to use. Red is chosen by default. -->
@@ -275,9 +277,9 @@
                 <h6>02 - 01</h6>
                 <h2>Renewal.</h2>
             </div>
-            <div class="wbox">
-                <ul class="port flex">
-                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeInLeft"  data-wow-duration=".7s" data-wow-delay=".3s">
+            <div class="swiper mySwiper">
+                <ul class="swiper-wrapper flex">
+                    <li class="swiper-slide wow animate__fadeInLeft"  data-wow-duration=".7s" data-wow-delay=".3s">
                         <img src="./img/new/renew_1.png" alt="보스 리뉴얼">
                         <div class="blackText">
                             <div>
@@ -293,7 +295,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
+                    <li class="swiper-slide wow animate__fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
                         <img src="./img/new/renew_2.png" alt="롤스터 리뉴얼">
                         <div class="blackText">
                             <div>
@@ -308,7 +310,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="col-lg-4 col-sm-1 renewbox wow animate__fadeInRight" data-wow-duration=".7s" data-wow-delay=".3s">
+                    <li class="swiper-slide wow animate__fadeInRight" data-wow-duration=".7s" data-wow-delay=".3s">
                         <img src="./img/new/renew_3.png" alt="지니 리뉴얼">
                         <div class="blackText">
                             <div>
@@ -324,7 +326,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+              </div>
         </div>
     </section>
 
@@ -746,7 +748,7 @@
                 </div>
                 <div class="col-md-4 contact-details">
                     <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                    <p>경기도 의왕시 삼동 부곡초등3길 5-0</p>
+                    <p>경기도 의왕시 삼동</p>
                 </div>
                 <div class="col-md-4 contact-details">
                     <h4><i class="fa fa-envelope"></i> Email</h4>
@@ -774,7 +776,8 @@
     <script src="vendor/formstone/background.js"></script>
     <script src="vendor/mixitup/jquery.mixitup.js"></script>
     <script src="vendor/wow/wow.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 
     <!-- Contact Form Scripts -->
     <script src="js/contact_me.js"></script>

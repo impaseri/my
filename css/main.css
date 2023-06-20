@@ -471,7 +471,80 @@ margin-top: 22px;
 }
 
 /* work */
+#work .swiper-slide{
+    max-width: 461px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
 
+#work .swiper-slide{
+    width: 460px ;
+}
+
+#work .swiper-slide img{
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#work .swiper-slide:hover .blackText{
+    left: 0;
+}
+
+
+
+.blackText{
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -461px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    color: #fff;
+}
+
+.blackText >div{
+    padding: 30px;
+}
+
+.blackText >div h5{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.blackText >div p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.renewLink{
+    margin-top: 30px;
+}
+.renewLink a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.renewLink a:hover span{
+    transform: translateX(5px);
+}
+.renewLink a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 7px 9px;
+    margin-right: 8px;
+}
+
+.renewLink a span{
+    transition: 0.3s;
+}
 
 
 #infoBox >img{
@@ -657,9 +730,6 @@ margin-top: 22px;
 
 #haminner #inBox .inleft{
     width: 510px;
-}
-
-#haminner #inBox .inleft li{
 }
 
 #haminner #inBox .inleft li a{
@@ -869,82 +939,7 @@ margin-top: 22px;
     height: 100%;
 }
 
-.port{
-    padding: 50px 0;
-    position: relative;
-    /* overflow: hidden; */
-}
 
-.port >li{
-    width: 32%;
-    max-width: 568px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    height: 300px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-}
-
-.port li img{
-    display: block;
-}
-
-.port li:hover .blackText{
-    left: 0;
-}
-
-
-
-.blackText{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -461px;
-    overflow: hidden;
-    transition: 0.4s ease;
-    color: #fff;
-}
-
-.blackText >div{
-    padding: 30px;
-}
-
-.blackText >div h5{
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-.blackText >div p{
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-}
-
-.renewLink{
-    margin-top: 30px;
-}
-.renewLink a:hover{
-    background-color: #000;
-    color: #fff;
-}
-
-.renewLink a:hover span{
-    transform: translateX(5px);
-}
-.renewLink a{
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    padding: 7px 9px;
-    margin-right: 8px;
-}
-
-.renewLink a span{
-    transition: 0.3s;
-}
 
 #my{
     margin-top: 100px;
@@ -1091,9 +1086,6 @@ margin-top: 22px;
 
 
 
-/* 0331 */
-.pobox{}
-
 .pobox .poheader{
     display: flex;
     justify-content: space-between;
@@ -1101,8 +1093,6 @@ margin-top: 22px;
     height: 70px;
 }
 
-.pobox .poheader .num1{
-}
 
 .pobox .poheader .num1 p{
     font-weight: 800;
@@ -1362,14 +1352,6 @@ nav ul li a{
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
-}
-
-
-.photo ul{
-
-}
-.photo li{
-
 }
 
 

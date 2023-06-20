@@ -46,3 +46,17 @@
         height: 642px;
         }
 }
+
+@media (max-width: 1279px){
+    .circle{
+        display: none;
+    }
+    #my >div .flex{
+        justify-content: center;
+        margin-top: 20%;
+    }
+    #my .text{
+        width: 100%;
+        padding: 0;
+    }
+}
